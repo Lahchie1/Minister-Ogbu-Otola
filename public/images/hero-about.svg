@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="grad-about" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A2332;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A0F14;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+  <rect width="1200" height="1200" fill="url(#grad-about)" />
+  <circle cx="600" cy="550" r="260" fill="none" stroke="#D4AF37" stroke-width="3" opacity="0.3" />
+  <path d="M 450 900 Q 600 700 750 900" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" />
+  <path d="M 420 930 Q 600 730 780 930" fill="none" stroke="#B3891E" stroke-width="4" stroke-linecap="round" />
+  <path d="M 480 860 Q 600 820 720 860" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" />
+  <g filter="url(#shadow)">
+    <rect x="520" y="400" width="160" height="320" rx="12" fill="#16202C" />
+    <circle cx="600" cy="440" r="40" fill="#D4AF37" />
+    <rect x="540" y="500" width="120" height="60" rx="6" fill="#0A0F14" />
+    <rect x="540" y="580" width="120" height="100" rx="6" fill="#0A0F14" />
+  </g>
+  <text x="600" y="1080" font-family="serif" font-size="28" font-weight="bold" fill="#C59B27" text-anchor="middle">MINISTER OGBU OTOLA</text>
+  <text x="600" y="1130" font-family="sans-serif" font-size="16" fill="#9A7516" text-anchor="middle">Church of Christ, Lawanson, Lagos</text>
+</svg>
