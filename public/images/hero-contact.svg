@@ -1,30 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
   <defs>
     <linearGradient id="grad-contact" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1A2332;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0A0F14;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1A365D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#091525;stop-opacity:1" />
     </linearGradient>
     <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
       <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.6" />
     </filter>
   </defs>
   <rect width="1200" height="1200" fill="url(#grad-contact)" />
-  <rect x="300" y="450" width="600" height="500" rx="30" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.25" />
-  <path d="M 350 850 Q 600 650 850 850" fill="none" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" />
-  <path d="M 330 880 Q 600 680 870 880" fill="none" stroke="#B3891E" stroke-width="4" stroke-linecap="round" />
-  <path d="M 390 810 Q 600 770 810 810" fill="none" stroke="#D4AF37" stroke-width="3" stroke-linecap="round" />
+  <rect x="300" y="450" width="600" height="500" rx="30" fill="none" stroke="#D4A017" stroke-width="2" opacity="0.25" />
+  <path d="M 350 850 Q 600 650 850 850" fill="none" stroke="#D4A017" stroke-width="4" stroke-linecap="round" />
+  <path d="M 330 880 Q 600 680 870 880" fill="none" stroke="#A07615" stroke-width="4" stroke-linecap="round" />
+  <path d="M 390 810 Q 600 770 810 810" fill="none" stroke="#D4A017" stroke-width="3" stroke-linecap="round" />
   <g filter="url(#shadow)">
     <rect x="440" y="350" width="320" height="340" rx="16" fill="#16202C" />
-    <rect x="460" y="380" width="280" height="240" rx="12" fill="#0A0F14" opacity="0.6" />
-    <path d="M 500 420 L 700 420" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" />
-    <path d="M 500 450 L 620 450" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" />
-    <path d="M 500 480 L 580 480" stroke="#D4AF37" stroke-width="4" stroke-linecap="round" />
-    <circle cx="600" cy="460" r="20" fill="#D4AF37" />
-    <circle cx="540" cy="500" r="12" fill="#9A7516" opacity="0.5" />
-    <circle cx="660" cy="500" r="12" fill="#9A7516" opacity="0.5" />
-    <circle cx="580" cy="530" r="12" fill="#9A7516" opacity="0.5" />
-    <circle cx="620" cy="530" r="12" fill="#9A7516" opacity="0.5" />
+    <rect x="460" y="380" width="280" height="240" rx="12" fill="#091525" opacity="0.6" />
+    <path d="M 500 420 L 700 420" stroke="#D4A017" stroke-width="4" stroke-linecap="round" />
+    <path d="M 500 450 L 620 450" stroke="#D4A017" stroke-width="4" stroke-linecap="round" />
+    <path d="M 500 480 L 580 480" stroke="#D4A017" stroke-width="4" stroke-linecap="round" />
+    <circle cx="600" cy="460" r="20" fill="#D4A017" />
+    <circle cx="540" cy="500" r="12" fill="#8B6512" opacity="0.5" />
+    <circle cx="660" cy="500" r="12" fill="#8B6512" opacity="0.5" />
+    <circle cx="580" cy="530" r="12" fill="#8B6512" opacity="0.5" />
+    <circle cx="620" cy="530" r="12" fill="#8B6512" opacity="0.5" />
   </g>
-  <text x="600" y="1070" font-family="serif" font-size="28" font-weight="bold" fill="#C59B27" text-anchor="middle">APOSTOLIC CORRESPONDENCE</text>
-  <text x="600" y="1120" font-family="sans-serif" font-size="16" fill="#9A7516" text-anchor="middle">Book Orders • Gospel Meeting Invitations • Scriptural Inquiries</text>
+  <text x="600" y="1070" font-family="serif" font-size="28" font-weight="bold" fill="#B8891A" text-anchor="middle">APOSTOLIC CORRESPONDENCE</text>
+  <text x="600" y="1120" font-family="sans-serif" font-size="16" fill="#8B6512" text-anchor="middle">Book Orders • Gospel Meeting Invitations • Scriptural Inquiries</text>
 </svg>

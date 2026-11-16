@@ -1,4 +1,4 @@
-export interface EbookPlatform {
+﻿export interface EbookPlatform {
   name: 'Selar' | 'Amazon' | 'Lulu';
   label: string;
   url: string;
@@ -62,9 +62,9 @@ export const books: Book[] = [
     status: 'Published',
     coverImage: '/images/the-bible-and-alcohol.png',
     coverTheme: {
-      bg: 'bg-[#1C130D]',
+      bg: 'bg-[#1A202C]',
       text: 'text-white',
-      accent: 'text-[#D4AF37]',
+      accent: 'text-[#D4A017]',
       badge: 'HERMENEUTICS & ETHICS',
     },
     features: [

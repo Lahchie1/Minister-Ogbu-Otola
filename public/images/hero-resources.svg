@@ -1,30 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
   <defs>
     <linearGradient id="grad-resources" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1A2332;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0A0F14;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1A365D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#091525;stop-opacity:1" />
     </linearGradient>
     <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
       <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.6" />
     </filter>
   </defs>
   <rect width="1200" height="1200" fill="url(#grad-resources)" />
-  <rect x="200" y="450" width="200" height="500" rx="8" fill="#D4AF37" />
-  <rect x="200" y="450" width="200" height="60" fill="#B3891E" />
-  <rect x="450" y="350" width="200" height="600" rx="8" fill="#9A7516" />
+  <rect x="200" y="450" width="200" height="500" rx="8" fill="#D4A017" />
+  <rect x="200" y="450" width="200" height="60" fill="#A07615" />
+  <rect x="450" y="350" width="200" height="600" rx="8" fill="#8B6512" />
   <rect x="450" y="350" width="200" height="60" fill="#7A5A12" />
-  <rect x="700" y="550" width="200" height="500" rx="8" fill="#C59B27" />
+  <rect x="700" y="550" width="200" height="500" rx="8" fill="#B8891A" />
   <rect x="700" y="550" width="200" height="60" fill="#A88231" />
-  <rect x="950" y="400" width="200" height="450" rx="8" fill="#9A7516" />
+  <rect x="950" y="400" width="200" height="450" rx="8" fill="#8B6512" />
   <rect x="950" y="400" width="200" height="60" fill="#7A5A12" />
-  <path d="M 220 470 L 380 470" stroke="#0A0F14" stroke-width="3" opacity="0.3" />
-  <path d="M 220 500 L 340 500" stroke="#0A0F14" stroke-width="3" opacity="0.2" />
-  <path d="M 470 370 L 630 370" stroke="#0A0F14" stroke-width="3" opacity="0.3" />
-  <path d="M 470 400 L 570 400" stroke="#0A0F14" stroke-width="3" opacity="0.2" />
-  <path d="M 720 570 L 880 570" stroke="#0A0F14" stroke-width="3" opacity="0.3" />
-  <path d="M 720 600 L 840 600" stroke="#0A0F14" stroke-width="3" opacity="0.2" />
-  <path d="M 970 420 L 1130 420" stroke="#0A0F14" stroke-width="3" opacity="0.3" />
-  <path d="M 970 450 L 1090 450" stroke="#0A0F14" stroke-width="3" opacity="0.2" />
-  <text x="600" y="1070" font-family="serif" font-size="28" font-weight="bold" fill="#C59B27" text-anchor="middle">SCRIPTURAL STUDY REPOSITORY</text>
-  <text x="600" y="1120" font-family="sans-serif" font-size="16" fill="#9A7516" text-anchor="middle">Vetted Doctrine • Restoration History • Teaching Audio</text>
+  <path d="M 220 470 L 380 470" stroke="#091525" stroke-width="3" opacity="0.3" />
+  <path d="M 220 500 L 340 500" stroke="#091525" stroke-width="3" opacity="0.2" />
+  <path d="M 470 370 L 630 370" stroke="#091525" stroke-width="3" opacity="0.3" />
+  <path d="M 470 400 L 570 400" stroke="#091525" stroke-width="3" opacity="0.2" />
+  <path d="M 720 570 L 880 570" stroke="#091525" stroke-width="3" opacity="0.3" />
+  <path d="M 720 600 L 840 600" stroke="#091525" stroke-width="3" opacity="0.2" />
+  <path d="M 970 420 L 1130 420" stroke="#091525" stroke-width="3" opacity="0.3" />
+  <path d="M 970 450 L 1090 450" stroke="#091525" stroke-width="3" opacity="0.2" />
+  <text x="600" y="1070" font-family="serif" font-size="28" font-weight="bold" fill="#B8891A" text-anchor="middle">SCRIPTURAL STUDY REPOSITORY</text>
+  <text x="600" y="1120" font-family="sans-serif" font-size="16" fill="#8B6512" text-anchor="middle">Vetted Doctrine • Restoration History • Teaching Audio</text>
 </svg>

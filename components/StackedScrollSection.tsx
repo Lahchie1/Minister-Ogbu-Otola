@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import Link from 'next/link';
 import {
   motion,
   useScroll,
@@ -14,7 +13,6 @@ import {
   Church,
   Library,
   MessageSquareQuote,
-  ArrowRight,
 } from 'lucide-react';
 
 /* ───────────────────────── Pillar Data with 4 Distinct Colors ─────────────────────────
@@ -32,12 +30,11 @@ const pillars = [
     description:
       'Expository adherence to the apostolic pattern, guarding sound doctrine against theological revision and cultural pressure.',
     scripture: '2 Timothy 1:13',
-    link: '/about#doctrine',
     icon: Shield,
     // Red Theme
     bgGradient: 'from-[#5A131B] via-[#3E0C12] to-[#25070A]',
     borderColor: 'border-[#E05263]/30',
-    hoverBorder: 'group-hover:border-[#E05263]/60',
+    hoverBorder: 'hover:border-[#E05263]/60',
     badgeBg: 'bg-[#E05263]/20',
     badgeText: 'text-[#FF8090]',
     accentText: 'text-[#FF8090]',
@@ -53,12 +50,11 @@ const pillars = [
     description:
       'Upholding the simplicity and divine architecture of the New Testament Church in name, organization, worship, and mission.',
     scripture: 'Jeremiah 6:16',
-    link: '/resources#restoration-history',
     icon: Church,
     // Green Theme
     bgGradient: 'from-[#0D3823] via-[#082618] to-[#04160E]',
     borderColor: 'border-[#2ECC71]/30',
-    hoverBorder: 'group-hover:border-[#2ECC71]/60',
+    hoverBorder: 'hover:border-[#2ECC71]/60',
     badgeBg: 'bg-[#2ECC71]/20',
     badgeText: 'text-[#4EFA93]',
     accentText: 'text-[#4EFA93]',
@@ -74,12 +70,11 @@ const pillars = [
     description:
       'Accessible treatises, structured study guides, and Bible class curricula designed for robust spiritual discernment.',
     scripture: 'Titus 2:1',
-    link: '/books',
     icon: Library,
     // Blue Theme
     bgGradient: 'from-[#0F2D54] via-[#091D38] to-[#051121]',
     borderColor: 'border-[#3894E6]/30',
-    hoverBorder: 'group-hover:border-[#3894E6]/60',
+    hoverBorder: 'hover:border-[#3894E6]/60',
     badgeBg: 'bg-[#3894E6]/20',
     badgeText: 'text-[#70B8FF]',
     accentText: 'text-[#70B8FF]',
@@ -95,19 +90,18 @@ const pillars = [
     description:
       'Serving the local brotherhood at Church of Christ, Lawanson, and proclaiming the unadulterated gospel across Nigeria.',
     scripture: 'Acts 17:11',
-    link: '/about',
     icon: MessageSquareQuote,
     // Primary Navy & Gold Theme
-    bgGradient: 'from-[#1A2332] via-[#121A26] to-[#0A0F17]',
-    borderColor: 'border-[#D4AF37]/35',
-    hoverBorder: 'group-hover:border-[#D4AF37]/70',
-    badgeBg: 'bg-[#D4AF37]/20',
-    badgeText: 'text-[#F3CE65]',
-    accentText: 'text-[#F3CE65]',
+    bgGradient: 'from-[#1A365D] via-[#122548] to-[#0A1830]',
+    borderColor: 'border-[#D4A017]/35',
+    hoverBorder: 'hover:border-[#D4A017]/70',
+    badgeBg: 'bg-[#D4A017]/20',
+    badgeText: 'text-[#E8C547]',
+    accentText: 'text-[#E8C547]',
     accentGlow: 'rgba(212, 175, 55, 0.25)',
-    topLineGradient: 'from-[#F3CE65] via-[#D4AF37] to-[#8F7018]',
+    topLineGradient: 'from-[#E8C547] via-[#D4A017] to-[#8F7018]',
     activeShadow: '0 25px 60px -12px rgba(26,35,50,0.8), 0 0 0 1px rgba(212,175,55,0.4)',
-    dotColor: '#D4AF37',
+    dotColor: '#D4A017',
   },
 ];
 
@@ -123,9 +117,8 @@ function PillarCard({
   const Icon = pillar.icon;
 
   return (
-    <Link
-      href={pillar.link}
-      className={`group relative block w-full h-full overflow-hidden rounded-2xl bg-gradient-to-b ${pillar.bgGradient} border ${pillar.borderColor} ${pillar.hoverBorder} shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300`}
+    <div
+      className={`relative block w-full h-full overflow-hidden rounded-2xl bg-gradient-to-b ${pillar.bgGradient} border ${pillar.borderColor} ${pillar.hoverBorder} shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-all duration-300`}
       style={{
         boxShadow: isActive
           ? pillar.activeShadow
@@ -154,7 +147,7 @@ function PillarCard({
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div
-                className={`w-11 h-11 rounded-xl ${pillar.badgeBg} border ${pillar.borderColor} flex items-center justify-center transition-transform duration-300 group-hover:scale-105`}
+                className={`w-11 h-11 rounded-xl ${pillar.badgeBg} border ${pillar.borderColor} flex items-center justify-center`}
               >
                 <Icon className={`w-5 h-5 ${pillar.accentText}`} />
               </div>
@@ -181,7 +174,7 @@ function PillarCard({
 
           {/* Title & Description */}
           <div className="flex flex-col gap-2.5">
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-white leading-tight tracking-tight group-hover:text-white/95">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-white leading-tight tracking-tight">
               {pillar.title}
             </h3>
             <p className="font-sans text-xs sm:text-sm text-white/70 leading-relaxed">
@@ -190,22 +183,16 @@ function PillarCard({
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="flex items-center justify-between pt-4 mt-4 border-t border-white/[0.08]">
+        {/* Footer — scripture reference only */}
+        <div className="pt-4 mt-4 border-t border-white/[0.08]">
           <span
             className={`font-sans text-xs font-bold uppercase tracking-wider ${pillar.accentText}`}
           >
             {pillar.scripture}
           </span>
-          <span
-            className={`inline-flex items-center gap-1.5 font-sans text-xs font-bold uppercase tracking-wider text-white/60 group-hover:${pillar.accentText} transition-colors duration-200`}
-          >
-            Explore Pillar
-            <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1" />
-          </span>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
@@ -333,13 +320,13 @@ function MobileStack() {
         
         {/* Section Header */}
         <div className="text-center pt-2 sm:pt-4">
-          <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#9A7516] font-bold">
+          <span className="font-sans text-[11px] uppercase tracking-[0.25em] text-[#8B6512] font-bold">
             Foundational Convictions
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1A2332] tracking-tight mt-1">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#1A365D] tracking-tight mt-1">
             Four Scriptural Pillars
           </h2>
-          <div className="w-12 h-[2px] bg-gradient-to-r from-[#D4AF37] to-[#9A7516] mx-auto mt-2" />
+          <div className="w-12 h-[2px] bg-gradient-to-r from-[#D4A017] to-[#8B6512] mx-auto mt-2" />
         </div>
 
         {/* 
@@ -377,7 +364,7 @@ function MobileStack() {
               />
             ))}
           </div>
-          <span className="font-cinzel text-[11px] font-bold text-[#1A2332]/70 uppercase tracking-widest">
+          <span className="font-cinzel text-[11px] font-bold text-[#1A365D]/70 uppercase tracking-widest">
             {pillars[activeStep].number} • {pillars[activeStep].title}
           </span>
         </div>
@@ -427,13 +414,13 @@ function DesktopCarousel() {
       <div className="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden">
         {/* Section Header */}
         <div className="text-center mb-8 px-6">
-          <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#9A7516] font-bold">
+          <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#8B6512] font-bold">
             Foundational Convictions
           </span>
-          <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl font-bold text-[#1A2332] tracking-tight mt-1.5">
+          <h2 className="font-serif text-3xl lg:text-4xl xl:text-5xl font-bold text-[#1A365D] tracking-tight mt-1.5">
             Four Scriptural Pillars
           </h2>
-          <div className="w-16 h-[2px] bg-gradient-to-r from-[#D4AF37] to-[#9A7516] mx-auto mt-3" />
+          <div className="w-16 h-[2px] bg-gradient-to-r from-[#D4A017] to-[#8B6512] mx-auto mt-3" />
         </div>
 
         {/* 3D Carousel Stage */}
@@ -490,7 +477,7 @@ function DesktopCarousel() {
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     isCenter
                       ? `${pillar.badgeBg} ring-4 ring-${pillar.dotColor}/20`
-                      : 'bg-[#1A2332]/25'
+                      : 'bg-[#1A365D]/25'
                   }`}
                   style={{
                     backgroundColor: isCenter ? pillar.dotColor : undefined,
@@ -500,7 +487,7 @@ function DesktopCarousel() {
                   <motion.span
                     initial={{ opacity: 0, x: -6 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="font-cinzel text-xs font-bold text-[#1A2332] tracking-wide"
+                    className="font-cinzel text-xs font-bold text-[#1A365D] tracking-wide"
                   >
                     {pillar.number} • {pillar.roman}
                   </motion.span>
@@ -516,12 +503,12 @@ function DesktopCarousel() {
           animate={{ opacity: step === 0 ? 0.6 : 0, y: step === 0 ? 0 : 8 }}
           transition={{ duration: 0.3 }}
         >
-          <span className="font-sans text-[10px] uppercase tracking-widest text-[#555E6D]">
+          <span className="font-sans text-[10px] uppercase tracking-widest text-[#4A5568]">
             Scroll to explore
           </span>
-          <div className="w-4 h-7 rounded-full border border-[#555E6D]/30 flex items-start justify-center p-1">
+          <div className="w-4 h-7 rounded-full border border-[#4A5568]/30 flex items-start justify-center p-1">
             <motion.div
-              className="w-1 h-1.5 bg-[#D4AF37] rounded-full"
+              className="w-1 h-1.5 bg-[#D4A017] rounded-full"
               animate={{ y: [0, 6, 0] }}
               transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
             />

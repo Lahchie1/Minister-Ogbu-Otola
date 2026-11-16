@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import Image from 'next/image';
 
@@ -22,7 +22,7 @@ export default function PageHero({
   subjectType = 'scenic',
 }: PageHeroProps) {
   return (
-    <section className="relative w-full h-[320px] sm:h-[350px] md:h-[380px] max-h-[400px] bg-[#070B10] overflow-hidden flex flex-col justify-end">
+    <section className="relative w-full h-[320px] sm:h-[350px] md:h-[380px] max-h-[400px] bg-[#0D1B2E] overflow-hidden flex flex-col justify-end">
       {/* 1. Background Image with Atmospheric Darkness */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
@@ -34,20 +34,20 @@ export default function PageHero({
           sizes="100vw"
         />
         {/* Directional Gradients for Crisp Text Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#070B10]/95 via-[#070B10]/80 to-[#070B10]/40 z-10" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070B10] via-transparent to-[#070B10]/50 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D1B2E]/95 via-[#0D1B2E]/80 to-[#0D1B2E]/40 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B2E] via-transparent to-[#0D1B2E]/50 z-10" />
       </div>
 
       {/* 2. Ambient Golden Glow Orbs */}
-      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-[#D4AF37]/15 rounded-full blur-[100px] pointer-events-none z-10" />
-      <div className="absolute bottom-6 left-10 w-60 h-60 bg-[#C59B27]/10 rounded-full blur-[90px] pointer-events-none z-10" />
+      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-[#D4A017]/15 rounded-full blur-[100px] pointer-events-none z-10" />
+      <div className="absolute bottom-6 left-10 w-60 h-60 bg-[#B8891A]/10 rounded-full blur-[90px] pointer-events-none z-10" />
 
-      {/* 3. Golden Sweep Wave Curve at Bottom (Flows into #FAF9F6 page body) */}
+      {/* 3. Golden Sweep Wave Curve at Bottom (Flows into #F8F6F1 page body) */}
       <div className="absolute inset-x-0 bottom-0 z-20 pointer-events-none overflow-hidden h-12 sm:h-16">
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="absolute bottom-0 w-full h-8 sm:h-12 text-[#D4AF37]/30"
+          className="absolute bottom-0 w-full h-8 sm:h-12 text-[#D4A017]/30"
         >
           <path
             d="M0,0 C150,90 350,-40 500,60 C650,140 900,10 1200,40 L1200,120 L0,120 Z"
@@ -57,7 +57,7 @@ export default function PageHero({
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="absolute -bottom-0.5 w-full h-6 sm:h-9 text-[#FAF9F6]"
+          className="absolute -bottom-0.5 w-full h-6 sm:h-9 text-[#F8F6F1]"
         >
           <path
             d="M0,40 C300,10 600,80 900,20 C1050,-10 1150,20 1200,30 L1200,120 L0,120 Z"
@@ -75,7 +75,7 @@ export default function PageHero({
             {highlightedWord && title.includes(highlightedWord) ? (
               <>
                 {title.split(highlightedWord)[0]}
-                <span className="bg-gradient-to-r from-[#FFF0C2] via-[#E2B743] to-[#B3891E] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#FFF3CC] via-[#E8C547] to-[#A07615] bg-clip-text text-transparent">
                   {highlightedWord}
                 </span>
                 {title.split(highlightedWord)[1]}

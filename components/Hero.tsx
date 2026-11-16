@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -28,7 +28,7 @@ const characterTestimonies = [
 
 // OGBU / OTOLA word style (desktop and mobile)
 const wordStyle =
-  'font-cinzel font-black text-6xl sm:text-7xl leading-[0.85] tracking-tight bg-gradient-to-b from-[#FFF3D1] via-[#E2B743] to-[#8A630A] bg-clip-text text-transparent drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)] opacity-95 select-none pointer-events-none';
+  'font-cinzel font-black text-6xl sm:text-7xl leading-[0.85] tracking-tight bg-gradient-to-b from-[#FFF3CC] via-[#E8C547] to-[#7A5508] bg-clip-text text-transparent drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)] opacity-95 select-none pointer-events-none';
 
 export default function Hero() {
   // Mobile: keep the minister cutout exactly 10px below the nav bar
@@ -44,7 +44,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-[900px] lg:min-h-[960px] xl:min-h-[1000px] bg-[#070B10] overflow-hidden flex flex-col justify-between pt-[120px] pb-16 md:pb-24 border-b border-[#D4AF37]/20"     style={{ paddingTop: mobilePaddingTop ?? undefined }}>
+    <section className="relative w-full min-h-[900px] lg:min-h-[960px] xl:min-h-[1000px] bg-[#0D1B2E] overflow-hidden flex flex-col justify-between pt-[120px] pb-16 md:pb-24 border-b border-[#D4A017]/20"     style={{ paddingTop: mobilePaddingTop ?? undefined }}>
       {/* 1. Background Image */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <Image
@@ -54,13 +54,13 @@ export default function Hero() {
           priority
           className="object-cover object-top opacity-60 mix-blend-luminosity filter contrast-125 brightness-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#070B10]/60 via-transparent to-[#070B10]/95"></div>
-        <div className="absolute inset-0 bg-radial from-[#D4AF37]/15 via-transparent to-transparent opacity-60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2E]/60 via-transparent to-[#0D1B2E]/95"></div>
+        <div className="absolute inset-0 bg-radial from-[#D4A017]/15 via-transparent to-transparent opacity-60"></div>
       </div>
 
       {/* 2. Minister Cutout Portrait: Centered, anchored to base of hero */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 pointer-events-none select-none hidden md:flex justify-center items-end h-[calc(100%-120px)] w-full max-w-[620px] lg:max-w-[700px] xl:max-w-[760px]">
-        <div className="absolute bottom-20 w-[360px] sm:w-[440px] md:w-[540px] h-[360px] sm:h-[440px] md:h-[540px] bg-radial from-[#D4AF37]/25 via-[#1A2332]/15 to-transparent rounded-full blur-3xl -z-10"></div>
+        <div className="absolute bottom-20 w-[360px] sm:w-[440px] md:w-[540px] h-[360px] sm:h-[440px] md:h-[540px] bg-radial from-[#D4A017]/25 via-[#1A365D]/15 to-transparent rounded-full blur-3xl -z-10"></div>
         <div className="relative h-full w-full aspect-[1008/1080]">
           <Image
             src="/images/min-ogbu-otola.png"
@@ -80,7 +80,7 @@ export default function Hero() {
           <div className="flex flex-col items-start z-30 w-full max-w-[280px] lg:max-w-[300px] xl:max-w-[320px]">
             {/* Word 1: OGBU */}
             <div className="w-full flex justify-start text-left select-none pointer-events-none z-10">
-              <span className="font-cinzel font-black text-8xl lg:text-[115px] xl:text-[135px] 2xl:text-[150px] leading-[0.85] tracking-tight bg-gradient-to-b from-[#FFF3D1] via-[#E2B743] to-[#8A630A] bg-clip-text text-transparent drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)] opacity-95">
+              <span className="font-cinzel font-black text-8xl lg:text-[115px] xl:text-[135px] 2xl:text-[150px] leading-[0.85] tracking-tight bg-gradient-to-b from-[#FFF3CC] via-[#E8C547] to-[#7A5508] bg-clip-text text-transparent drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)] opacity-95">
                 OGBU
               </span>
             </div>
@@ -99,17 +99,17 @@ export default function Hero() {
               <div className="flex flex-col items-stretch gap-3 pt-1.5 w-full">
                 <Link
                   href="/books"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-gradient-to-r from-[#D4AF37] to-[#B3891E] hover:from-[#E6C65A] hover:to-[#C59B27] text-[#0A0F14] font-sans text-sm font-bold rounded-lg shadow-xl hover:shadow-2xl transition-all transform active:scale-95 whitespace-nowrap"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-gradient-to-r from-[#D4A017] to-[#A07615] hover:from-[#E8C547] hover:to-[#B8891A] text-[#091525] font-sans text-sm font-bold rounded-lg shadow-xl hover:shadow-2xl transition-all transform active:scale-95 whitespace-nowrap"
                 >
                   <span>View Published Books</span>
-                  <ArrowRight className="w-4 h-4 text-[#0A0F14]" />
+                  <ArrowRight className="w-4 h-4 text-[#091525]" />
                 </Link>
 
                 <Link
                   href="/resources"
                   className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-sans text-sm font-semibold rounded-lg transition-all whitespace-nowrap"
                 >
-                  <BookOpen className="w-4 h-4 text-[#D4AF37]" />
+                  <BookOpen className="w-4 h-4 text-[#D4A017]" />
                   <span>Explore Study Resources</span>
                 </Link>
               </div>
@@ -122,15 +122,15 @@ export default function Hero() {
               {characterTestimonies.map((item) => (
                 <div
                   key={item.id}
-                  className={`w-full bg-[#0A0F14]/90 backdrop-blur-md border border-[#D4AF37]/50 rounded-xl p-3 shadow-2xl transition-transform duration-300 hover:rotate-0 hover:scale-105 group ${item.angleClass}`}
+                  className={`w-full bg-[#091525]/90 backdrop-blur-md border border-[#D4A017]/50 rounded-xl p-3 shadow-2xl transition-transform duration-300 hover:rotate-0 hover:scale-105 group ${item.angleClass}`}
                 >
                   <div className="flex items-start gap-2">
-                    <Quote className="w-3 h-3 text-[#D4AF37] shrink-0 mt-0.5 opacity-80" />
+                    <Quote className="w-3 h-3 text-[#D4A017] shrink-0 mt-0.5 opacity-80" />
                     <div className="flex flex-col">
                       <p className="font-serif text-xs text-slate-100 italic leading-snug">
                         {item.quote}
                       </p>
-                      <p className="font-sans text-[10px] text-[#D4AF37] font-semibold tracking-wide uppercase mt-1">
+                      <p className="font-sans text-[10px] text-[#D4A017] font-semibold tracking-wide uppercase mt-1">
                         {item.author}
                       </p>
                     </div>
@@ -141,7 +141,7 @@ export default function Hero() {
 
             {/* Word 2: OTOLA — 200px vertical separation from OGBU */}
             <div className="w-full flex justify-end text-right select-none pointer-events-none z-10 mt-[29px]">
-              <span className="font-cinzel font-black text-8xl lg:text-[115px] xl:text-[135px] 2xl:text-[150px] leading-[0.85] tracking-tight bg-gradient-to-b from-[#FFF3D1] via-[#E2B743] to-[#8A630A] bg-clip-text text-transparent drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)] opacity-95">
+              <span className="font-cinzel font-black text-8xl lg:text-[115px] xl:text-[135px] 2xl:text-[150px] leading-[0.85] tracking-tight bg-gradient-to-b from-[#FFF3CC] via-[#E8C547] to-[#7A5508] bg-clip-text text-transparent drop-shadow-[0_15px_35px_rgba(0,0,0,0.9)] opacity-95">
                 OTOLA
               </span>
             </div>
@@ -162,7 +162,7 @@ export default function Hero() {
             <span className={wordStyle}>OTOLA</span>
           </div>
           {/* Rectangle below image to hide awkward base — matches OGBU gold text */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[296px] h-[8px] bg-[#D4AF37]"></div>
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20 w-[296px] h-[8px] bg-[#D4A017]"></div>
           <Image
             src="/images/min-ogbu-otola.png"
             alt="Minister Ogbu Otola"
@@ -186,17 +186,17 @@ export default function Hero() {
           <div className="flex flex-col items-stretch gap-3 pt-1 w-full">
             <Link
               href="/books"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-gradient-to-r from-[#D4AF37] to-[#B3891E] hover:from-[#E6C65A] hover:to-[#C59B27] text-[#0A0F14] font-sans text-sm font-bold rounded-lg shadow-xl transition-all whitespace-nowrap"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-gradient-to-r from-[#D4A017] to-[#A07615] hover:from-[#E8C547] hover:to-[#B8891A] text-[#091525] font-sans text-sm font-bold rounded-lg shadow-xl transition-all whitespace-nowrap"
             >
               <span>View Published Books</span>
-              <ArrowRight className="w-4 h-4 text-[#0A0F14]" />
+              <ArrowRight className="w-4 h-4 text-[#091525]" />
             </Link>
 
             <Link
               href="/resources"
               className="inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-md font-sans text-sm font-semibold rounded-lg transition-all whitespace-nowrap"
             >
-              <BookOpen className="w-4 h-4 text-[#D4AF37]" />
+              <BookOpen className="w-4 h-4 text-[#D4A017]" />
               <span>Explore Study Resources</span>
             </Link>
           </div>

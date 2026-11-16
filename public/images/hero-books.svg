@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
   <defs>
     <linearGradient id="grad-books" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1A2332;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0A0F14;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1A365D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#091525;stop-opacity:1" />
     </linearGradient>
     <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
       <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#000" flood-opacity="0.6" />
     </filter>
   </defs>
   <rect width="1200" height="1200" fill="url(#grad-books)" />
-  <rect x="200" y="400" width="260" height="600" rx="12" fill="#D4AF37" />
-  <rect x="200" y="400" width="260" height="80" fill="#B3891E" />
-  <rect x="450" y="500" width="300" height="500" rx="12" fill="#9A7516" />
+  <rect x="200" y="400" width="260" height="600" rx="12" fill="#D4A017" />
+  <rect x="200" y="400" width="260" height="80" fill="#A07615" />
+  <rect x="450" y="500" width="300" height="500" rx="12" fill="#8B6512" />
   <rect x="450" y="500" width="300" height="80" fill="#7A5A12" />
-  <rect x="740" y="450" width="260" height="600" rx="12" fill="#C59B27" />
+  <rect x="740" y="450" width="260" height="600" rx="12" fill="#B8891A" />
   <rect x="740" y="450" width="260" height="80" fill="#A88231" />
-  <path d="M 220 420 L 220 980 L 480 980 L 480 420 Z" fill="none" stroke="#0A0F14" stroke-width="2" />
-  <path d="M 470 520 L 470 1000 L 750 1000 L 750 520 Z" fill="none" stroke="#0A0F14" stroke-width="2" />
-  <path d="M 760 470 L 760 1050 L 1000 1050 L 1000 470 Z" fill="none" stroke="#0A0F14" stroke-width="2" />
-  <text x="460" y="1070" font-family="serif" font-size="22" font-weight="bold" fill="#0A0F14" text-anchor="middle">THE BIBLE AND ALCOHOL</text>
-  <text x="460" y="1090" font-family="sans-serif" font-size="14" fill="#0A0F14" text-anchor="middle">Truth Beyond Tradition</text>
-  <text x="600" y="350" font-family="serif" font-size="30" font-weight="bold" fill="#D4AF37" text-anchor="middle">PUBLISHED TREATISES</text>
-  <text x="600" y="390" font-family="sans-serif" font-size="16" fill="#9A7516" text-anchor="middle">Authoritative Hermeneutics • Christian Ethics</text>
+  <path d="M 220 420 L 220 980 L 480 980 L 480 420 Z" fill="none" stroke="#091525" stroke-width="2" />
+  <path d="M 470 520 L 470 1000 L 750 1000 L 750 520 Z" fill="none" stroke="#091525" stroke-width="2" />
+  <path d="M 760 470 L 760 1050 L 1000 1050 L 1000 470 Z" fill="none" stroke="#091525" stroke-width="2" />
+  <text x="460" y="1070" font-family="serif" font-size="22" font-weight="bold" fill="#091525" text-anchor="middle">THE BIBLE AND ALCOHOL</text>
+  <text x="460" y="1090" font-family="sans-serif" font-size="14" fill="#091525" text-anchor="middle">Truth Beyond Tradition</text>
+  <text x="600" y="350" font-family="serif" font-size="30" font-weight="bold" fill="#D4A017" text-anchor="middle">PUBLISHED TREATISES</text>
+  <text x="600" y="390" font-family="sans-serif" font-size="16" fill="#8B6512" text-anchor="middle">Authoritative Hermeneutics • Christian Ethics</text>
 </svg>
